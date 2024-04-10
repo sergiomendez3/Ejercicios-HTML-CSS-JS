@@ -1,0 +1,42 @@
+/* Estilo para los divs */
+.div-cuadrado {
+    width: 100px;
+    height: 100px;
+}
+
+/* Estilo para la primera fila de divs */
+.fila-1 .div-cuadrado {
+    background-color: aquamarine;
+}
+
+/* Estilo para la segunda fila de divs */
+.fila-2 .div-cuadrado {
+    border: 5px solid rebeccapurple;
+}
+
+/* Estilo para la tercera fila de divs */
+.fila-3 .div-cuadrado {
+    border-radius: 80%;
+    background-color: brown;
+}
+
+/* Estilo para la cuarta fila de divs */
+.fila-4 .div-cuadrado:nth-child(1) {
+    background-color: blanchedalmond;
+}
+
+.fila-4 .div-cuadrado:nth-child(2) {
+    background-color: chartreuse;
+}
+
+.fila-4 .div-cuadrado:nth-child(3) {
+    background-color: darkblue;
+}
+
+.fila-4 .div-cuadrado:nth-child(4) {
+    background-color: fuchsia;
+}
+
+.fila-4 .div-cuadrado:nth-child(5) {
+    background-color: gold
+}
