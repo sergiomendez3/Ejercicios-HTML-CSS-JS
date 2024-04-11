@@ -1,0 +1,47 @@
+/* Estilo para la tabla usando CSS grid */
+.tabla-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-gap: 12px;
+}
+
+/* Estilo para las filas */
+.fila {
+    display: flex;
+}
+
+/* Estilo para los divs */
+.div-cuadrado {
+    width: 125px;
+    height: 125px;
+    border: 3px solid transparent;
+}
+
+/* Estilo para la primera fila de divs */
+.fila-1 .div-cuadrado {
+    background-color: teal;
+}
+
+/* Estilo para la segunda fila de divs */
+.fila-2 .div-cuadrado {
+    background-color:springgreen;
+}
+
+/* Estilo para la tercera fila de divs */
+.fila-3 .div-cuadrado {
+    background-color:royalblue;
+}
+
+/* Estilo para la cuarta fila de divs */
+.fila-4 .div-cuadrado {
+    background-color:plum;
+}
+
+/* Estilo para la parte no cubierta de los divs */
+.fila-1 .div-cuadrado:nth-child(2),
+.fila-2 .div-cuadrado:nth-child(3),
+.fila-3 .div-cuadrado:nth-child(4),
+.fila-4 .div-cuadrado:nth-child(5) {
+    border-color: teal;
+}
+
