@@ -1,0 +1,33 @@
+.tabla-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 100px;
+}
+
+.fila {
+    display: grid;
+    gap: 25px;
+}
+
+.div-cuadrado {
+    width: 25px;
+    height: 25px;
+    background-color: maroon;
+    display: flex;
+    cursor: pointer;
+}
+
+/* Estilo para mover 10px hacia arriba al pasar el ratón por encima de los cuadrados */
+.div-cuadrado:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo para ocultar los checkboxes */
+.checkbox-hidden {
+    display: none;
+}
+
+/* Estilo para rotar los cuadrados al pulsar */
+.checkbox-hidden:checked + .div-cuadrado {
+    transform: rotate(45deg);
+}
