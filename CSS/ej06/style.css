@@ -1,0 +1,43 @@
+/* Creo los estilos para la tabla usando CSS grid */
+.tabla-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 75px);
+    grid-gap: 150px;
+}
+
+/* Estilo para las filas */
+.fila {
+    display: flex;
+}
+
+/* Estilo para los divs */
+.div-cuadrado {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+}
+
+/* Roto los cuadrado 45º al pasar el ratón por encima */
+.div-cuadrado:hover {
+    transform: rotate(45deg);
+}
+
+/* Estilo para la primera fila de divs */
+.fila-1 .div-cuadrado {
+    background-color: violet;
+}
+
+/* Estilo para la segunda fila de divs */
+.fila-2 .div-cuadrado {
+    background-color: navy;
+}
+
+/* Estilo para la primera fila de divs */
+.fila-3 .div-cuadrado {
+    background-color: palevioletred;
+}
+
+/* Estilo para la primera fila de divs */
+.fila-4 .div-cuadrado {
+    background-color: saddlebrown;
+}
