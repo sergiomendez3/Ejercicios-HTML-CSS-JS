@@ -1,0 +1,14 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fondo {
+    width: 600px;
+    height: 700px;
+    background-image: url(Homer-Simpson.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:inherit;
+}
