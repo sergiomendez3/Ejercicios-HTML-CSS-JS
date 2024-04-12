@@ -1,38 +1,44 @@
-/* Creo los estilos para la tabla usando CSS grid */
-.tabla-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 75px);
-    grid-gap: 15px;
-}
 
-/* Estilo para las filas */
-.fila {
-    display: flex;
+/* Estilo para el grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 
 /* Estilo para los divs */
 .div-cuadrado {
     width: 150px;
     height: 150px;
+    position: relative;
+}
+
+.div-cuadrado::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
     border: 3px solid transparent;
 }
 
 /* Estilo para la primera fila de divs */
-.fila-1 .div-cuadrado {
-    background-color: violet;
+.fila-1 .div-cuadrado::before {
+    border: 3px double brown;
 }
 
 /* Estilo para la segunda fila de divs */
-.fila-2 .div-cuadrado {
-    background-color: navy;
+.fila-2 .div-cuadrado::before {
+    border: 3px solid red;
 }
 
-/* Estilo para la primera fila de divs */
-.fila-3 .div-cuadrado {
-    background-color: palevioletred;
+/* Estilo para la tercera fila de divs */
+.fila-3 .div-cuadrado::before {
+    border: 3px dotted blue;
 }
 
-/* Estilo para la primera fila de divs */
-.fila-4 .div-cuadrado {
-    background-color: saddlebrown;
+/* Estilo para la cuarta fila de divs */
+.fila-4 .div-cuadrado::before {
+    border: 3px dashed green;
 }
